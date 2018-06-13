@@ -17,7 +17,9 @@ public class DatabaseInitializer {
     @PostConstruct
     public void init() {
 
-        repository.save(new Conta("1234567890123456", 1000.00));
+        repository.save(new Conta("12345678901234", 1000.00));
+        repository.save(new Conta("12345678901222", 1000.00));
+
 
     }
 }

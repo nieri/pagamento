@@ -1,5 +1,8 @@
 package br.com.munieri.pagamento.controller;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class ContaDTO {
 
     private String action;
@@ -13,6 +16,17 @@ public class ContaDTO {
     private Double amount;
 
     public ContaDTO() {
+    }
+
+    public ContaDTO(String action, String code, String authorizationCode) {
+        this.action = action;
+        this.code = code;
+        this.authorizationCode = authorizationCode;
+    }
+
+    public ContaDTO(String action, String code) {
+        this.action = action;
+        this.code = code;
     }
 
     public ContaDTO(String action, String cardNumber, Double amount) {

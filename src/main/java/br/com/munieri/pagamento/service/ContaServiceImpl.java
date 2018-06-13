@@ -1,11 +1,11 @@
 package br.com.munieri.pagamento.service;
 
-import br.com.munieri.pagamento.model.Conta;
 import br.com.munieri.pagamento.controller.ContaDTO;
-import br.com.munieri.pagamento.repository.ContaRepository;
 import br.com.munieri.pagamento.exception.ContaNaoEncontrada;
 import br.com.munieri.pagamento.exception.SaldoInsuficiente;
 import br.com.munieri.pagamento.exception.TransacaoValidator;
+import br.com.munieri.pagamento.model.Conta;
+import br.com.munieri.pagamento.repository.ContaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
